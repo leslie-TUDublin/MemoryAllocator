@@ -1,0 +1,10 @@
+services:
+  cpp-dev:
+    image: gcc:13
+    container_name: memory_allocator_dev
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    tty: true
+    stdin_open: true
+    command: /bin/bash
